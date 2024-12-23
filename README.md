@@ -1,4 +1,4 @@
-# 取得所需要的資料 access_token , zone_id , record_id
+# 取得所需要的資料 access_token , zone_ID , record_ID
 
 ## 申請domain的Access Token
 >
@@ -60,12 +60,11 @@ curl -X GET "https://api.cloudflare.com/client/v4/zones" \
 >
 >
 ## 取得recordID
->zoneID=剛剛拿到的zoneID
 >
 >將
 ```
-zoneID=剛剛拿到的zoneID
-curl -X GET "https://api.cloudflare.com/client/v4/zones/${zoneID}/dns_records" \
+zone_ID=剛剛拿到的zoneID
+curl -X GET "https://api.cloudflare.com/client/v4/zones/${zone_ID}/dns_records" \
   -H "Authorization: Bearer ${token}" \
   -H "Content-Type:application/json" | python3 -m json.tool
 ```
