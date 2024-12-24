@@ -71,8 +71,12 @@ curl -X GET "https://api.cloudflare.com/client/v4/zones/${zone_ID}/dns_records" 
 >貼到terminal裡，會得到recordID(開記事本先把recordID記起來)
 >
 ><img width="400" alt="11" src="https://github.com/user-attachments/assets/62328d64-ffb5-4fbc-a27e-1f8c2f7dbb70" />
-
-
+>
+## 填入需要的資料
+>
+>把config.json打開，把剛剛取得的資訊全都填入，然後把config.json放到/opt裡
+>
+>啟動程式就可以囉
 
 
 
