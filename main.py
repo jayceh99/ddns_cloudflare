@@ -21,7 +21,7 @@ def renew_ddns(token, domain_name, zone_id, record_id, my_ip) -> None:
 
 
 def main():
-    my_profile = open(r"C:\Users\jayce\config2.json", "r") #這裡更改config.json的路徑
+    my_profile = open(r"/opt/config.json", "r") #這裡更改config.json的路徑
     my_profile_json = json.load(my_profile)
     my_profile.close()
     token = my_profile_json["token"]
